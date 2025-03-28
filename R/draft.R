@@ -14,6 +14,7 @@ library(usethis)
 create_package("C:/Users/asarq/Documents/GitHub/carbonseq")
 
 #Tweak a function definition.
+#do this everytime you want to try functions after you've  modified them
 load_all()
 #Try out the change by running a small example or some tests.
 devtools::check()
@@ -25,3 +26,11 @@ devtools::check()
 
 # this adds all the functions with 'export' to the namespace
 devtools::document()
+
+# the styler package helps re-style the entire package or a single function
+style_pgk()
+style_file()
+
+# when using some other package's functions on my function, be sure to use it like this
+foo <- function(...) pkgB::blah(...)
+
