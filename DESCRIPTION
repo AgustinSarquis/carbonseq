@@ -1,19 +1,24 @@
-Package: carbonseq
+Package: yourpackage
+Type: Package
 Title: Compute Carbon Sequestration and Climate Benefit of Sequestration
-Version: 0.0.0.9000
-Authors@R: 
-    person("Agustin", "Sarquis", "agustinsarquis91@gmail.com", role = c("aut", "cre"),
-           comment = c(ORCID = "0000-0001-5089-600X"))
-    person("Carlos", "Sierra", role = "aut", 
-           comment = c(ORCID = "0000-0003-0009-4169"))
+Version: 0.1.0
+Author: 
+    Agustin Sarquis <agustinsarquis91@gmail.com> [aut, cre],
+    Carlos Sierra [aut]
+Maintainer: Agustin Sarquis <agustinsarquis91@gmail.com>
 Description: Functions to compute Carbon Sequestration (CS) and Climate Benefit
     of Sequestration (CBS). You provide a vector of carbon stocks over time, and
     ‘carbonseq’ makes the computation. Equations are described in depth in
     ‘doi.org/10.5194/bg-18-1029-2021’.
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+License: What license it uses
 Encoding: UTF-8
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
-URL: https://github.com/AgustinSarquis/CBSpkg
-BugReports: https://github.com/AgustinSarquis/CBSpkg/issues
+LazyData: true
+Imports:
+    otherpackage (>= version)
+Authors@R: 
+    person("Agustin", "Sarquis", email = "agustinsarquis91@gmail.com", 
+           role = c("aut", "cre"), 
+           comment = c(ORCID = "0000-0001-5089-600X")),
+    person("Carlos", "Sierra", 
+           role = "aut", 
+           comment = c(ORCID = "0000-0003-0009-4169"))
